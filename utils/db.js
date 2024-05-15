@@ -32,7 +32,10 @@ class DBClient {
     return numberOfUsers;
   }
 
-  // Get the number of documents in the 'files' collection
+  /**
+   * Returns number of documents in the collection files.
+   * @return {number} amount of files.
+   */
   async nbFiles() {
     const numberOfFiles = this.filesCollection.countDocuments();
     return numberOfFiles;
